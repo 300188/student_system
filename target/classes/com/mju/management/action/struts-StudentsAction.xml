@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="students" extends="struts-default" namespace="/students">
+	    <action name="*_*" class="com.mju.management.action.{1}Action" method="{2}">
+	        <result name="query_success">/students/Students_query_success.jsp</result>
+	        <result name="delete_success" type="chain">Students_query</result>
+	        <result name="add_success">/students/Students_add_success.jsp</result>
+	        <result name="modify_success">/students/Students_modify.jsp</result>
+	        <result name="save_success">/students/Students_modify_success.jsp</result>
+	        <result name="search_success">/students/Students_search.jsp</result>
+	    	
+	    </action>
+	</package>
+</struts>

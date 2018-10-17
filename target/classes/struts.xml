@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 修改default.properties中的常量 -->
+    <!-- 自动加载配置文件 开启开发者模式-->
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- 启动动态方法调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<include file="com/mju/management/action/struts-UserAction.xml"></include>
+	<include file="com/mju/management/action/struts-StudentsAction.xml"></include>
+</struts>
