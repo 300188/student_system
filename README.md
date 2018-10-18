@@ -1,2 +1,2 @@
 # student_system
-对struct2和hibernate的一个案例总结
+对strut2和hibernate的一个案例总结
